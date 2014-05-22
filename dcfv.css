@@ -5,6 +5,8 @@
  *   Magenta: #b9287b
  *   Green: #28b966
  *
+ * Also using #fefefe as white, #333333 as black.
+ *
  * Fonts:
  *   Drupalcamp: DIN Regular Bold
  *   Fox Valley: DIN Condensed Web
@@ -19,11 +21,12 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
-h1 {
+#site-name {
+    margin-top: 0.67em;
     text-align: center;
 }
 
-h1 img {
+#site-name img {
     max-height: 150px;
 }
 
@@ -72,6 +75,10 @@ ul#date-location {
     font-weight: bold;
     padding: 1rem 2rem;
     width: 100%;
+    -webkit-transition: background-color ease-out 300ms;
+    -moz-transition: background-color ease-out .300ms;
+    -o-transition: background-color ease-out 300ms;
+    transition: background-color ease-out 300ms;
 }
 
 .primary-nav > li+li {
@@ -85,6 +92,16 @@ ul#date-location {
 #footer {
     background-color: #287bb9;
     border-top: 4px solid #b96628;
+    color: #fefefe;
+    padding: 1rem 0;
+}
+
+#footer .columns {
+    text-align: center;
+}
+
+#footer a {
+    color: #28b966;
 }
 
 /* "Medium" screens */
@@ -100,6 +117,12 @@ ul#date-location {
     }
     #primary-nav li.nav-expand-action {
         display: none;
+    }
+    .primary-nav a:hover {
+        background-color: #28b966;
+    }
+    #footer .columns {
+        text-align: left;
     }
 }
 
