@@ -10,9 +10,8 @@
  *   Fox Valley: DIN Condensed Web
  */
 body {
-    background-color: #fcfcfc;
+    background-color: #287bb9;
     color: #333333;
-    font-size: 14px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -32,7 +31,12 @@ button, .button {
     background-color: #287bb9;
 }
 
+.outer:not(#footer) {
+    background-color: #fefefe;
+}
+
 ul#date-location {
+    font-size: 1.1em;
     font-weight: bold;
     list-style-type: none;
     margin: 1.25rem 0;
@@ -70,12 +74,18 @@ ul#date-location {
     width: 100%;
 }
 
-/*
-#primary-nav .nav-expand-action,
-#primary-nav .nav-expand-action .button {
-    width: 100%;
+.primary-nav > li+li {
+    border-left: 1px solid #fefefe;
 }
-*/
+
+#content {
+    padding: 1rem 0;
+}
+
+#footer {
+    background-color: #287bb9;
+    border-top: 4px solid #b96628;
+}
 
 /* "Medium" screens */
 @media only screen and (min-width: 40.063em) {
