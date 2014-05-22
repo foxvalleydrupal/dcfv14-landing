@@ -1,0 +1,143 @@
+/**
+ * Colors: http://www.colorhexa.com/b96628
+ *   Blue: #287bb9
+ *   Brown: #b96628
+ *   Magenta: #b9287b
+ *   Green: #28b966
+ *
+ * Fonts:
+ *   Drupalcamp: DIN Regular Bold
+ *   Fox Valley: DIN Condensed Web
+ */
+body {
+    background-color: #fcfcfc;
+    color: #333333;
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: DIN Condensed Web, Abel;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1 img {
+    max-height: 150px;
+}
+
+button, .button {
+    background-color: #287bb9;
+}
+
+ul#date-location {
+    font-weight: bold;
+    list-style-type: none;
+    margin: 1.25rem 0;
+    text-align: center;
+}
+
+#primary-nav {
+    display: table;
+}
+
+.primary-nav {
+    background-color: #287bb9;
+    display: table-row;
+    width: 100%;
+}
+
+.primary-nav li {
+    display: table-cell;
+    text-align: center;
+}
+
+.primary-nav li:not(.nav-expand-action) {
+    display: none;
+}
+
+.primary-nav li.nav-expand-action li {
+    display: block;
+}
+
+.primary-nav a {
+    color: #fefefe;
+    display: inline-block;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+/*
+#primary-nav .nav-expand-action,
+#primary-nav .nav-expand-action .button {
+    width: 100%;
+}
+*/
+
+/* "Medium" screens */
+@media only screen and (min-width: 40.063em) {
+    ul#date-location li {
+        display: inline;
+    }
+    ul#date-location li+li:before {
+        content: ' • ';
+    }
+    #primary-nav li:not(.nav-expand-action) {
+        display: table-cell;
+    }
+    #primary-nav li.nav-expand-action {
+        display: none;
+    }
+}
+
+/* "Large" screens */
+@media only screen and (min-width: 64.063em) {
+    h1 {
+        text-align: left;
+    }
+    ul#date-location li {
+        display: block;
+    }
+    ul#date-location li+li:before {
+        content: '';
+    }
+}
+
+/* Drop nav */
+ul.nav-expand-container {
+    position: relative;
+}
+
+ul.nav-expand-container li:not(.nav-expand-action) {
+    display: none;
+}
+
+ul.nav-expand-container ul.nav-expand-content {
+    background-color: #333333;
+    color: #fefefe;
+    display: block;
+    width: 100%;
+}
+
+ul.nav-expand-container ul.nav-expand-content {
+    margin: 0;
+    padding: 0;
+}
+
+ul.nav-expand-container ul.nav-expand-content li {
+    display: block;
+    float: none;
+}
+
+ul.nav-expand-container ul.nav-expand-content li:hover {
+    background-color: #28b966;
+}
+
+ul.nav-expand-container ul.nav-expand-content li a {
+    color: #fefefe;
+    display: block;
+    padding: .5rem;
+}
